@@ -1,0 +1,7 @@
+consider using a Recurrent Neural Network (RNN) or one of its variants (LSTM, GRU, etc.), which are designed to work with sequential data and have a kind of "memory" because they use their internal state (hidden state) from previous steps as input for the current step.
+
+However, the Transformer model you are using is already designed to handle sequences and has a kind of "memory" in the sense that the self-attention mechanism allows the model to consider each part of the input sequence in relation to every other part. This allows the model to capture dependencies between different parts of the sequence, no matter how far apart they are in the sequence.
+
+If you want to give your model the ability to "remember" things across different sequences, you might want to consider using a model with an external memory mechanism, such as a Neural Turing Machine (NTM) or a Differentiable Neural Computer (DNC).
+
+In any case, keep in mind that training models with a "memory" can be more complex and computationally intensive, and may require a larger amount of data to train effectively.
